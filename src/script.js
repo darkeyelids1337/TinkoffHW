@@ -5,10 +5,8 @@ const formButton = document.querySelector('.form-btn'),
       inputMes = document.querySelector('.input-error-mes'),
       requestBtn = document.querySelector('.request-btn'),
       form = document.querySelector('.form-section'),
-      fillingCourse = document.querySelector('.filling-course-panel');
-
-let sheet = document.styleSheets[0];
-let rules = sheet.rules;
+      fillingCourse = document.querySelector('.filling-course-panel'),
+      cityArrow = document.querySelector('.select-arrow')
 
 wrapperMes.classList.add('visually-hidden');
 inputMes.classList.add('visually-hidden');
@@ -27,22 +25,17 @@ requestBtn.addEventListener('click', (evt) => {
 });
 
 city.addEventListener('focus',() => {
-    sheet.insertRule('.select-wrapper::after {transform: rotate(180deg); }', rules.length);
+    cityArrow.classList.toggle('toggle');
 });
 city.addEventListener('focusout',() => {
-    sheet.removeRule(rules.length - 1);
+    cityArrow.classList.toggle('toggle');
 });
 fillingCourse.addEventListener('click', (evt) => {
     evt.preventDefault();
-    const child = evt.target.parentNode.querySelector('.info-list');
-    child.hidden = !child.hidden;
-    if(child.hidden){
-        child.style.display = 'none';
-        sheet.removeRule(rules.length - 1);
-    }
-    else 
-    {
-        child.style.display = 'block';
-        sheet.insertRule('.filling-course-panel h2::after {transform: rotate(180deg); }', rules.length);
-    }
+    const arrow = evt.target.parentNode.querySelector('.arrow');
+    const infoList = evt.target.parentNode.nextElementSibling.lastElementChild;
+    arrow.classList.toggle('toggle');
+    console.log(infoList);
+    infoList.classList.toggle('visible');
+   
 });

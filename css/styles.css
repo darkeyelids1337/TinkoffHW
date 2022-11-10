@@ -9,7 +9,20 @@ body {
     padding: 0;
   }
   
-
+h2{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  line-height: 28px;
+}
+.main h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 0px;
+}
   /* HEADER */
   .header{
     margin-bottom: 80px;
@@ -91,13 +104,6 @@ body {
     margin: 0 auto;
     max-width: 1360px;
   }
-  .main h1{
-    font-size:44px;
-    font-weight: 900;
-    line-height: 48px;
-    text-align: center;
-    
-  }
   .front-img-wrapper{
     display:flex;
     justify-content: center;
@@ -133,6 +139,7 @@ body {
    /* FITS */
   .fits-header{
     padding: 76px 224px 24px;
+    margin-bottom: 24px;
   }
    .fits-wrapper{
     display: grid;
@@ -163,6 +170,7 @@ body {
 
   .waiting-header{
     padding: 76px 224px 24px;
+    margin-bottom: 24px;
   }
   .waiting-course{
     max-width: 1360px;
@@ -189,6 +197,7 @@ body {
   /* Filling-course */
   .filling-course-header{
     padding: 76px 224px 24px;
+    margin-bottom: 24px;
   }
   .filling-course-panel-wrapper{
     margin-top: 24px;
@@ -213,18 +222,19 @@ body {
     text-decoration: none;
     color: inherit;
   }
-  .filling-course-panel h2{
-    margin-bottom: 28px;
+  .wrapper-header{
+    display:flex;
+    text-align: center;
+    position: relative;
   }
-  .filling-course-panel h2::after{
-    content: ' ';
+  .arrow{
     position: absolute;
-    display: inline;
+    content: ' ';
     width: 24px;
     height: 24px;
-    background-image:url('/assets/icons/arrow.svg');
     right: 0px;
-    /* top:5px; */
+    align-self: center;
+    background-image:url('/assets/icons/arrow.svg');
   }
   .info-list{
     list-style: none;
@@ -236,6 +246,9 @@ body {
     margin-bottom: 28px;
     margin-left: 20px;
     display: none;
+  }
+  .visible{
+    display: block;
   }
   .info-list li{
     margin-bottom: 12px;
@@ -257,6 +270,7 @@ body {
 
   .training-header{
     padding: 76px 224px 24px;
+    margin-bottom: 24px;
   }
   .training-wrapper{
     max-width: 1360px;
@@ -308,6 +322,7 @@ body {
   /* EDUCATION */
   .education-header{
     padding:76px 224px 24px;
+    margin-bottom: 24px;
   }
   .education-wrapper{
     max-width: 1360px;
@@ -380,6 +395,7 @@ body {
   /* COURSE-WAY */
   .course-way-header{
     padding:76px 224px 24px;
+    margin-bottom: 24px;
   }
   .course-way-wrapper{
     position: relative;
@@ -444,6 +460,7 @@ body {
     font-size: 36px;
     line-height: 40px;
     margin-top: 64px;
+    color: rgba(0, 0, 0, 0.8);
   }
   .city-form{
     width: 536px;
@@ -459,16 +476,10 @@ body {
     position: relative;
     margin-bottom: 20px;
   }
-  .select-wrapper::after{
-    content: ' ';
+  .select-arrow{
     position: absolute;
-    display: inline;
-    width: 24px;
-    height: 24px;
-    background-image: url('/assets/icons/arrow.svg');
     right: 35px;
     top: 16px;
-    /* transform: rotate(0deg); */
   }
   .city-form option:first{
     color: rgba(0, 0, 0, 0.54);
@@ -581,4 +592,7 @@ body {
 
   .visually-hidden {
     visibility: hidden;
+  }
+  .toggle{
+    transform: rotate(180deg);
   }
