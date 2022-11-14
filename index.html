@@ -2,23 +2,313 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
     <link
-      rel="icon"
-      type="image/svg+xml"
-      href="https://acdn.tinkoff.ru/params/common_front/resourses/icons/favicon-32x32.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet" />
+    rel="icon"
+    type="image/svg+xml"
+    href="https://acdn.tinkoff.ru/params/common_front/resourses/icons/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel ="stylesheet" href ="./css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тинькофф Образование</title>
   </head>
   <body>
-    <div class="logo"></div>
-    <div class="login-icon"></div>
-    <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
-    <h1>Frontend-разработчик</h1>
-    <script type="module" src="./main.js"></script>
+    <header class="header">
+      <div class="header__container">
+        <div class = "header__left-side">
+          <div class="logo-wrapper">
+            <div class="header__logo"></div>
+          </div>
+          <div class = "header__crumbs">
+            <p class="header__crumb header__crumb_active">Финтех курсы</p>
+            <p class="crumb ">Стажировки</p>
+            <p class="crumb">Мероприятия и партнерства</p>
+          </div>
+        </div>
+        <div class="header__right-side">
+          <div class="header__login-link-wrapper">
+            <a href ="#" class="login-link">Войти</a>
+          </div>
+          <div class="header__login-icon-wrapper">
+            <div class="header__login-icon"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class = 'text-block'>
+        <h1>Frontend-разработчик</h1>
+        <p>Трехмесячный бесплатный учебный курс от Финтеха, который можно проходить из любой точки России</p>
+        <button type="button" name="request-button" class="text-block__request-button">Подать заявку</button>
+      </section>
+      <div class="text-block__front-img-wrapper">
+        <img src="/assets/images/frontend.png" alt="Фронтенд технологии"/>
+      </div>
+      <section class="fits">
+        <div class="fits__header">
+          <h1>Кому подойдет курс</h1>
+        </div>
+        <div class="fits__wrapper">
+          <img src="./assets/images/about-course-720.png" alt="pic for fit">
+          <ul class="fits__list">
+            <li><p>Вы студент или выпускник технических <br>вузов</p></li>
+            <li><p>Хотите научиться создавать интерфейсы</p></li>
+            <li><p>Хотите познакомиться с современным<br> JavaScript и его фреймворками</p></li>
+          </ul>
+        </div>
+      </section>
+      <section class="waiting">
+        <div class="waiting__header">
+          <h1>Что вас ждет на курсе</h1>
+        </div>
+        <div class="waiting__course">
+          <div class="waiting__about">
+            <div class="waiting__data">
+              <h2>Основы разработки</h2>
+              <p>Делимся инструментами, которые<br> позволяют нам создавать<br> веб-продукты для миллионов<br> клиентов</p>
+            </div>
+          </div>
+          <div class="waiting__about">
+            <div class="waiting__data">
+              <h2>Доступ к учебным<br> материалам онлайн</h2>
+              <p>Онлайн-курс с лекциями<br> и домашними заданиями. Вы можете<br> его пройти из любой точки России</p>
+            </div>
+          </div>
+          <div class="waiting__about">
+            <div class="waiting__data">
+              <h2>Возможность попасть<br> в команду</h2>
+              <p>Во время курса участники выполняют<br> много практических заданий. <br>Мы замечаем лучших и приглашаем <br>их на собеседование</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filling">
+       <div class="filling-course">
+        <div class="filling-course__header">
+          <h1>Из чего состоит курс</h1>
+        </div>
+        <div class="filling-course__panel-wrapper">
+          <div class="filling-course__panel">
+            <div class="filling-course__info-wrapper">
+              <a href="#">
+                <div class="filling-course__wrapper-header">
+                  <h2>Основы JavaScript</h2>
+                  <div class="filling-course__arrow"></div>
+                </div>
+                <div class="filling-course__info">
+                  <ul class="filling-course__info-list">
+                    <li>Изучим основы и тонкости языка</li>
+                    <li>Типы данных</li>
+                    <li>Области видимости и замыкания</li>
+                    <li>Прототипы и наследование</li>
+                    <li>Однопоточность и стек вызовов</li>
+                    <li>Асинхронные API: Promise, AJAX, async-await</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="filling-course__info-wrapper">
+              <a href="#">
+                <div class="filling-course__wrapper-header">
+                  <h2>Основы верстки: HTML и CSS</h2>
+                  <div class="filling-course__arrow"></div>
+                </div>
+                <div class="filling-course__info">
+                  <ul class="filling-course__info-list">
+                    <li>HTML. Структура документа. HTML-элементы, классификация. Специальные символы</li>
+                    <li>CSS. Селекторы. Специфичность. Сброс стилей. Блочная модель. Единицы размера и цвета</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="filling-course__info-wrapper">
+              <a href="#">
+                <div class="filling-course__wrapper-header">
+                  <h2>Работа с веб-страницей и событиями</h2>
+                  <div class="filling-course__arrow"></div>
+                </div>
+                <div class="filling-course__info ">
+                  <ul class="filling-course__info-list" >
+                    <li>Объектная модель документа и манипуляция DOM-элементами</li>
+                    <li>Шаблонизация и пользовательские веб-компоненты</li>
+                    <li>События DOM</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="filling-course__info-wrapper">
+              <a href="#">
+                <div class="filling-course__wrapper-header">
+                  <h2>Работа с фреймворками Angular и React</h2>
+                  <div class="filling-course__arrow"></div>
+                </div>
+                <div class="filling-course__info ">
+                  <ul class="filling-course__info-list" >
+                    <li>Структура проекта, набор библиотек, система сборки, routing, lazy loading, dependency injection</li>
+                    <li>При изучении Angular поговорим также об RxJs</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="filling-course__info-wrapper">
+              <a href="#">
+                <div class="filling-course__wrapper-header">
+                  <h2>Angular</h2>
+                  <div class="filling-course__arrow"></div>
+                </div>
+                <div class="filling-course__info ">
+                  <ul class="filling-course__info-list" >
+                    <li>TypeScript</li>
+                    <li>Компоненты</li>
+                    <li>Шаблонизация</li>
+                    <li>Реактивные формы</li>
+                    <li>DI и сервисы в архитектуре приложения. Иерархия инжекторов</li>
+                    <li>Firebase: БД, права доступа к БД, авторизация</li>
+                  </ul>
+                </div>
+              </a> 
+            </div>
+            <div class="filling-course__info-wrapper">
+              <a href="#">
+                <div class="filling-course__wrapper-header">
+                  <h2>React</h2>
+                  <div class="filling-course__arrow"></div>
+                </div>
+                <div class="filling-course__info ">
+                  <ul class="filling-course__info-list" >
+                    <li>Babel/TypeScript и JSX</li>
+                    <li>Компонентный подход</li>
+                    <li>Состояние и свойства компонентов</li>
+                    <li>Жизненный цикл компонентов</li>
+                    <li>Работа с формами</li>
+                    <li>Redux, react-router, styled-components и прочий необходимый минимум</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
+      <section class="training">
+        <div class="training__header">
+          <h1>Как строится обучение</h1>
+        </div>
+        <div class="training__wrapper">
+          <div class="training__about">
+            <div class="training__left">
+              <h2>Онлайн-занятия 1 раз в неделю</h2>
+              <ul class="training__list">
+                <li>Курс стартует в середине февраля и длится три месяца</li>
+                <li>В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</li>
+              </ul>
+            </div>
+          </div>
+          <div class="training__about">
+            <div class="training__right">
+              <h2>Интерактив и нетворкинг</h2>
+              <ul class="training__list">
+                <li>Вы сможете задавать вопросы преподавателям во время<br> лекции в Зуме или в общем чате</li>
+                <li>Обсуждать материалы и домашки вместе с сокурсниками.<br> Это поможет найти новый профессиональный круг общения</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education">
+        <div class="education__header">
+          <h1>Бесплатное обучение</h1>
+        </div>
+        <div class="education__wrapper">
+          <div class="education__content">
+            <div class="education__svg-left"></div>
+            <div class="education__about">
+              <h2>Каждый студент проходит тщательный<br> отбор</h2>
+              <ul class="education__list">
+                <li>Пройдите экзамен и заполните анкету, которая выполняет функцию портфолио</li>
+                <li>Расскажите подробно о своем опыте: сильное портфолио влияет на решение</li>
+              </ul>
+            </div>
+          </div>
+          <div class="education__content">
+            <div class="education__svg-right"></div>
+            <div class="education__about">
+              <h2>Одинаковые условия для всех</h2>
+              <ul class="education__list">
+                <li>Чтобы успешно закончить курс, нужно выполнить обязательные домашние задания и защитить проект</li>
+                <li>После обучения выдаем сертификат, подтверждающий,что вы освоили теорию и навыки веб-разработки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="course-way">
+        <div class="course-way__header">
+          <h1>Как попасть на курс</h1>
+        </div>
+        <div class="course-way__wrapper">
+          <div class="course-way__about">
+            <div class="course-way__icon"><p>1</p></div>
+            <p>Оставьте заявку онлайн <br>и зарегистрируйтесь <br>на сайте</p>
+          </div>
+          <div class="course-way__about">
+            <div class="course-way__icon"><p>2</p></div>
+            <p>Расскажите в анкете,<br> почему хотите изучить<br> веб-разработку</p>
+          </div>
+          <div class="course-way__about">
+            <div class="course-way__icon"><p>3</p></div>
+            <p>Пройдите экзамен: <br>решите несколько задач<br> по программированию </p>
+          </div>
+          <div class="course-way__about">
+            <div class="course-way__icon"><p>4</p></div>
+            <p>Дождитесь письма <br>об итогах отбора.<br> Начните учиться</p>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="form__wrapper">
+          <div class="form__content">
+            <h1>Подать заявку</h1>
+            <form class="form__main-form" action="#" method="post">
+              <div class="form__select-wrapper">
+                <select name="city" class="form__city-form">
+                  <option value="" disabled selected hidden>Город</option>
+                  <option value="Moscow">Москва</option>
+                  <option value="SPB">Санкт-Петербург</option>
+                  <option value="Ryazan">Рязань</option>
+                  <option value="EKB">Екатеринбург</option>
+                  <option value="RND">Ростов-на-Дону</option>
+                  <option value="Samara">Самара</option>
+                </select>
+                <div class="form__arrow"></div>
+                <p class="form__error-mes">Поле обязательное</p>
+              </div>
+              <div class="form__input-form-wrapper">
+                <input class="form__input-form" type="text" name="username" placeholder="Фамилия и имя">
+              </div>
+              <p class="form__input-error-mes">Поле обязательное</p>
+              <div class="form__checkbox">
+                <div class="form__svg-check"></div>
+                <a>Я согласен <span>с условиями передачи информации</span></a>
+                <div class="form__button-wrapper">
+                  <button type="submit" class="form__button">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div>
+          <p>© 2022 «Тинькофф Образование»</p>
+        </div>
+        <div>
+          <p>По вопросам пишите на <a href="mailto:edu@tinkoff.ru">edu@tinkoff.ru</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/script.js"></script>
   </body>
 </html>
